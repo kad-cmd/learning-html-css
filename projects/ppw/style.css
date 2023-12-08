@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+}
+
+
+#header {
+    height: 100%;
+    width: 100vh;
+}
+
+.container {
+    padding: 10px 10px;
+  }
+
+
+ /* The Vertical Navbar */
+#horNav {
+    background: transparent;
+    height: 90px;
+    border: .01px solid transparent;
+    border-color: #343434;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-right: 20px;
+    position: fixed 0;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.horNav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    float: left; /* to move the nav to the to right*/
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #e8e8e8;
+    font: whyte-medium;
+    font-weight: 200;
+    margin-bottom: 100px;
+}
+
+.link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.nav-t-l-name {
+    font-weight: 400;
+}
+
+.nav-t-l-no {
+    font-size: large;
+    margin-left: 6px;
+    font-weight: 400;
+}
+
+.nav-t-l-no {
+    display: block;
+}
+
+.nav-t-l-2 {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+.header-t {
+    color: #e8e8e8;
+    font: whyte-bold;
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: 700px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.header-t-2 {
+   font-size: 20px;
+   font-weight: 100;
+   font: whyte;
+   color: #e8e8e8;
+   margin-left: 20%;
+}
+
+/* The Vertical Navbar */
+#verNav {
+    background-color: transparent;
+    border:.01px solid transparent;
+    border-color: #343434;
+    position: absolute;
+    top: 0; /* makes that little box for the logo*/
+    left: 0; /* makes that little box for the logo*/
+    bottom: 0;
+    width: 105px;
+    margin-left: 28px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    position: fixed;
+
+}
+
+#verNav-icons {
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+}
+
+.icon {
+    color: #e8e8e8;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.icon:hover {
+    color: #e8e8e86c;
+    transform: translateY(-5px); /* Moves the icon up 5px */
+    transition: 0.5s; /* controls the speed of the transform and other motion or change any change */
+}
