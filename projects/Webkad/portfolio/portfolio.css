@@ -18,6 +18,8 @@ body {
 
 main {
   padding-top: 200px;
+  margin-left: 200px; 
+  color: black;
 }
 
 
@@ -148,4 +150,20 @@ hr {
   color: rgba(44, 43, 43, 0.424);
   transform: translateY(-5px); /* Moves the icon up 5px */
   transition: 0.5s; /* controls the speed of the transform and other motion or change any change */
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+
+}
+
+.work-list section img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
