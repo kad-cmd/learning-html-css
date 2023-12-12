@@ -143,3 +143,9 @@ hr {
   color: black;
   bottom: 5px;
 }
+
+.verNav ul li a:hover {
+  color: rgba(44, 43, 43, 0.424);
+  transform: translateY(-5px); /* Moves the icon up 5px */
+  transition: 0.5s; /* controls the speed of the transform and other motion or change any change */
+}

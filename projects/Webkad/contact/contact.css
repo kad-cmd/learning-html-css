@@ -143,6 +143,14 @@ hr {
   color: black;
   bottom: 5px;
 }
+.verNav ul li a:hover {
+  color: rgba(44, 43, 43, 0.424);
+  transform: translateY(-5px); /* Moves the icon up 5px */
+  transition: 0.5s; /* controls the speed of the transform and other motion or change any change */
+}
+
+
+/*!----------------- Vform -----------------*/
 
 .form {
   display: flex;
@@ -178,7 +186,7 @@ hr {
   width: 100%;
   padding: 10px 10px 20px 10px;
   outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
+  border: 1.5px solid rgb(0, 0, 0);
   border-radius: 6px;
 }
 
@@ -211,7 +219,7 @@ hr {
   width: 100%;
   padding: 10px 10px 20px 10px;
   outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
+  border: 1.5px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -242,7 +250,7 @@ hr {
 
 .fancy {
   background-color: transparent;
-  border: 2px solid #cacaca;
+  border: 2px solid #000000;
   border-radius: 0px;
   box-sizing: border-box;
   color: #fff;
@@ -267,7 +275,7 @@ hr {
   content: " ";
   width: 1.7rem;
   height: 2px;
-  background: #cacaca;
+  background: #000000;
   top: 50%;
   left: 1.5em;
   position: absolute;
@@ -322,7 +330,7 @@ hr {
 
 .fancy:hover {
   color: white;
-  background: #cacaca;
+  background: #000000;
 }
 
 .fancy:hover::before {

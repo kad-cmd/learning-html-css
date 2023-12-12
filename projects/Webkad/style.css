@@ -144,6 +144,12 @@ hr {
   bottom: 5px;
 }
 
+.verNav ul li a:hover {
+  color: #e8e8e86c;
+  transform: translateY(-5px); /* Moves the icon up 5px */
+  transition: 0.5s; /* controls the speed of the transform and other motion or change any change */
+}
+
 /*!-----------------Intro Text-----------------*/
 .intro-text {
   color: #e8e8e8;

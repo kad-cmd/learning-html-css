@@ -102,7 +102,7 @@ body {
 
 /* The Vertical navigation bar */
 
-#verNav {
+.verNav {
   /* The Vertical Navbar */
   background-color: transparent;
   border: 0.01px solid transparent;
@@ -118,11 +118,7 @@ body {
   position: fixed;
 }
 
-#verNav-icons {
-  bottom: 0px;
-  left: 0;
-  position: absolute;
-}
+
 
 .icon {
   color: #e8e8e8;
