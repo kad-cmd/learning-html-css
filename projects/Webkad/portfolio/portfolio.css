@@ -12,19 +12,23 @@ html{
 }
 
 body {
-    background-color: #171717;
+    background-color: whitesmoke;
     border: 5px;
 }  
 
+main {
+  padding-top: 200px;
+}
+
+
 hr {
   border: 0.01px solid transparent;
-  border-color: #343434;
+  border-color: black transparent;
   margin-top: 608px; 
   margin-left: 200px; 
   margin-right: 100px; 
   padding-right: 20px;
 }
-
 .logo img {
   border: 2px solid transparent;
   width: 120px;
@@ -41,7 +45,7 @@ hr {
 
 .horNav {
   border: 0.01px solid transparent; /* ?.01px == "the size", solid == "color", ##transparent */
-  border-color: #343434;
+  border-color: black;
   background: transparent;
   margin-top: 28px; 
   margin-left: 40px;
@@ -49,7 +53,6 @@ hr {
   width: 94%;
   position: fixed;
 }
-
 .horNav ul {
   margin-right: 30px;
   margin-left: 190px;
@@ -63,14 +66,14 @@ hr {
   
 }
 
-
 .link {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #e8e8e8;
+  color: black;
   font: whyte-medium;
   font-weight: 200; /* Bold changer */
+  margin-bottom: 170px;
 }
 
 .link::after {
@@ -78,7 +81,7 @@ hr {
   display: block;
   width: 0;
   height: 3px;
-  background: white;
+  background: black;
   margin: 10px 0;
   transition: 0.5s;
 }
@@ -122,54 +125,21 @@ hr {
   height: 92.8%; /* ?bottom spacing */
   width: 90px;
 }
-
 .verNav ul { /* ?To move the icons*/
   float: left;
   position: fixed;
   padding-left: 80px;
   padding-bottom: 50px;
   list-style-type: none;
-
   left: 0;
   bottom: 0;
   
 }
-
 .verNav ul li {
   font-size: larger;
   margin-top: 30px;
 }
 .verNav ul li a { /* ?To Customize the Icons */
-  color: #e8e8e8;
+  color: black;
   bottom: 5px;
-}
-
-/*!-----------------Intro Text-----------------*/
-.intro-text {
-  color: #e8e8e8;
-  padding-top: 300px;
-  padding-left: 200px;
-  text-align: inherit;
-}
-
-.intro-text h1 {
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-top: 20px;
-}
-
-.intro-text p {
-  font-size: 20px;
-  font-weight: 100;
-  margin-top: 20px;
-}
-
-.intro-pic img {
-  border-radius: 20px;
-  position: absolute;
-  top: 199px;
-  left: 1000px;
-  width: 700px;
-  height: 700px;
 }
