@@ -1,132 +1,139 @@
-<style>
-  .subscribe-button {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 105px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px; /* margin == space */
-    margin-bottom: 8px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-  .subscribe-button:hover{
-    background-color: green !important;
-  }
+  <body>
+    <style>
+      .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        /* margin == space */
+        margin-bottom: 8px;
+        transition: opacity 0.15s;
+      }
 
-  .join-button {
-    background-color: white;
-    color: #1b8eed;
-    border-color: #1b8eed;
-    border-radius: 3px;
-    border-style: solid;
-    height: 36px;
-    width: 62px;
-    cursor: pointer;
-    margin-bottom: 8px;
-  }
+      .subscribe-button:hover {
+        opacity: 0.8;
+      }
 
-  .tweet-button {
-    background-color: #1b8eed;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 18px; /* half of the lower (height or width) to get round button */
-    border-style: solid;
-    height: 36px;
-    width: 70px;
-    cursor: pointer;
-    margin-left: 8px;
-    margin-bottom: 8px;
-  }
+      .subscribe-button:active {
+        opacity: 0.5;
+      }
 
-  .uber-button {
-    background-color: black;
-    color: white;
-    border: none;
-    height: 36px;
-    width: 106px;
-    margin-left: 8px;
-  }
+      .join-button {
+        background-color: white;
+        color: #1b8eed;
+        border-color: #1b8eed;
+        border-radius: 3px;
+        border-style: solid;
+        height: 36px;
+        width: 62px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        transition: box-sh;
+      }
 
-  .amazon-button {
-    background-color: rgb(255, 216, 20);
-    color: black;
-    border: none;
-    height: 25px;
-    width: 145px;
-    border: none;
-    border-radius: 18px;
-    margin-left: 8px;
-  }
+      .tweet-button {
+        background-color: #1b8eed;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 18px;
+        /* half of the lower (height or width) to get round button */
+        border-style: solid transparent;
+        height: 36px;
+        width: 70px;
+        cursor: pointer;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        transition: box-shadow 0.15s;
+      }
 
-  .github-button{
-    background-color: rgb(46, 164, 79);
-    color: white;
-    font-weight: bold;
-    font-size: 12;
-    border: none;
-    height: 30px;
-    width: 83px;
-    border: none;
-    border-radius: 6px;
-    margin-left: 8px;
-  }
+      .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
 
-  .bootstrap1-button{
-    background-color: rgb(121,82,179);
-    color: white;
-    font-weight: bold;
-    font-size: small;
-    height: 36px;
-    width: 123px;
-    border: none;
-    border-radius: 2px;
-    margin-left: 8px;
-  }
+      .uber-button {
+        background-color: black;
+        color: white;
+        border: none;
+        height: 36px;
+        width: 106px;
+        margin-left: 8px;
+      }
 
-  .bootstrap2-button {
-    background-color: rgb(255,255,255);
-    color: gray;
-    font-weight: bold;
-    font-size: small;
-    height: 36px;
-    width: 123px;
-    border: ;
-    border-radius: 2px;
-    margin-left: 8px;
-  }
-</style>
+      .amazon-button {
+        background-color: rgb(255, 216, 20);
+        color: black;
+        border: none;
+        height: 25px;
+        width: 145px;
+        border: none;
+        border-radius: 18px;
+        margin-left: 8px;
+        transition: background-color .15s;
+      }
 
-<button class="subscribe-button">
-  SUBSCIBE
-</button>
+      .amazon-button:hover {
+        background-color: rgb(238, 198, 02);
+      }
 
-<button class="join-button">
-  JOIN
-</button>
+      .github-button {
+        background-color: rgb(46, 164, 79);
+        color: white;
+        font-weight: bold;
+        font-size: 12;
+        border: none;
+        height: 30px;
+        width: 83px;
+        border: none;
+        border-radius: 6px;
+        margin-left: 8px;
+      }
 
-<button class="tweet-button">
-  Tweet
-</button>
+      .bootstrap1-button {
+        background-color: rgb(121, 82, 179);
+        color: white;
+        font-weight: bold;
+        font-size: small;
+        height: 36px;
+        width: 123px;
+        border: none;
+        border-radius: 2px;
+        margin-left: 8px;
+      }
 
-<button class="uber-button">
-  Reguest now
-</button>
+      .bootstrap2-button {
+        background-color: rgb(255, 255, 255);
+        color: gray;
+        font-weight: bold;
+        font-size: small;
+        height: 36px;
+        width: 123px;
+        border: ;
+        border-radius: 2px;
+        margin-left: 8px;
+      }
+    </style>
 
-<button class="amazon-button">
-  Add to Cart
-</button>
+    <button class="subscribe-button">SUBSCIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+    <button class="uber-button">Reguest now</button>
+    <button class="amazon-button">Add to Cart</button>
+    <button class="github-button">Sign up</button>
+    <button class="bootstrap1-button">Get started</button>
+    <button class="bootstrap2-button">Download</button>
 
-<button class="github-button">
-  Sign up
-</button>
-
-<button class="bootstrap1-button">
-  Get started
-</button>
-
-<button class="bootstrap2-button">
-  Download
-</button>
+  </body>
+</html>
