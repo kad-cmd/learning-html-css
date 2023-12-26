@@ -40,7 +40,13 @@
         width: 62px;
         cursor: pointer;
         margin-bottom: 8px;
-        transition: box-sh;
+        transition: background 0.5s, opacity 0.5s;
+
+      }
+
+      .join-button:hover {
+        background-color: rgb(20, 135, 230);
+        color: white;
       }
 
       .tweet-button {
@@ -60,7 +66,7 @@
       }
 
       .tweet-button:hover {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
       }
 
       .uber-button {
@@ -95,10 +101,16 @@
         font-size: 12;
         border: none;
         height: 30px;
-        width: 83px;
+        width: 80px;
         border: none;
         border-radius: 6px;
         margin-left: 8px;
+        cursor: pointer;
+        transition: box-shadows 0.15s;
+      }
+
+      .github-button:hover {
+        box-shadow: 0px, 10px, 10px, rgba(0, 0, 0, 0.15) ;
       }
 
       .bootstrap1-button {
@@ -120,10 +132,18 @@
         font-size: small;
         height: 36px;
         width: 123px;
-        border: ;
+        border: .5px solid gray;
         border-radius: 2px;
         margin-left: 8px;
+        transition: background 0.15s, 
+          color 0.15s;
       }
+
+      .bootstrap2-button:hover {
+        background:gray;
+        color: white;
+      }
+      
     </style>
 
     <button class="subscribe-button">SUBSCIBE</button>
